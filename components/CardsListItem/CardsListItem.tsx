@@ -3,5 +3,5 @@ type CardsListItemProps = {
 };
 
 export const CardsListItem: React.FC<CardsListItemProps> = ({ children }) => {
-  return <li className="card__list-item">{children}</li>;
+  return <li className="cards__list-item">{children}</li>;
 };
