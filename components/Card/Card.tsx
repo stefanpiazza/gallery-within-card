@@ -11,8 +11,8 @@ export const Card = ({ listing }: CardProps) => {
 
   return (
     <div className="card">
-      <div className="header">
-        <div className="images">
+      <div className="card__header">
+        <div className="card__images">
           {otherPropertyImages && (
             <ol className="images__list">
               {otherPropertyImages.map((otherPropertyImage, index) => {
@@ -62,13 +62,13 @@ export const Card = ({ listing }: CardProps) => {
           )}
         </div>
       </div>
-      <div className="main">
+      <div className="card__main">
         <p>Guide Price</p>
         <p>{price}</p>
         <h2>{title}</h2>
         <p>{address}</p>
       </div>
-      <div className="footer">
+      <div className="card__footer">
         <p>{publishedOn}</p>
       </div>
     </div>
