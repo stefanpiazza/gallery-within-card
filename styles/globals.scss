@@ -76,22 +76,6 @@ a {
   scroll-snap-align: start;
 }
 
-.images__group-list {
-  display: grid;
-  grid-auto-columns: calc(25%);
-  grid-auto-flow: column;
-  list-style: none;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-}
-
-.images__group-list-item {
-  padding-top: 100%;
-  position: relative;
-  scroll-snap-align: start;
-}
-
 .card__main {
   grid-area: main;
 }
