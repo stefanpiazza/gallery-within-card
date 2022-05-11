@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { MutableRefObject, useEffect, useState } from "react";
 
-const useOnScreen = (
-  ref,
+const useOnScreen = <T extends Element[]>(
+  ref: MutableRefObject<T>,
   { threshold = 0, root = null, rootMargin = "0%" }
 ) => {
   const [entry, setEntry] = useState<IntersectionObserverEntry>();
