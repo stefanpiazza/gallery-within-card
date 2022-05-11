@@ -27,7 +27,8 @@ export const Card = ({ listing }: CardProps) => {
     if (imagesListItemEntry.isIntersecting) {
       setActiveImageIndex(
         parseInt(
-          (imagesListItemEntry.target as HTMLElement).dataset.imageIndex,
+          (imagesListItemEntry.target as HTMLElement).dataset
+            .imageIndex as string,
           10
         )
       );
